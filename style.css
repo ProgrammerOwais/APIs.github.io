@@ -462,7 +462,7 @@ textarea {
 }
 
 .sec1-toggle {
-    height: 89vh;
+    height: auto;
     opacity: 1;
     transition: all 300ms;
 }
@@ -811,7 +811,7 @@ textarea {
     transition: all 300ms;
 }
 .sec3-toggle {
-    height: 89.5vh;
+    height: auto;
     opacity: 1;
 }
 
