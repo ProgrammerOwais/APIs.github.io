@@ -1,0 +1,1695 @@
+@import url('https://fonts.googleapis.com/css2?family=Quando&display=swap');
+*,::after,::before,html {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    overflow-y: auto;
+    overflow-x: hidden;
+
+}
+* {
+    letter-spacing: 1px;
+}
+
+.api-btns {
+    display: flex;
+    justify-content: flex-start;
+}
+
+.header-btn {
+    margin: 1rem 0.5rem;
+    padding: 0.5rem;
+    border: none;
+    outline: none;
+    border-radius: 0.5rem;
+    font-size: 1.2rem;
+    background-color: yellow;
+    color: black;
+    box-shadow: 0.5px 0.5px 3px rgba(0, 0, 0, 0.521);
+    transition: box-shadow 200ms;
+}
+
+.header-btn:hover,.header-btn:active {
+    cursor: pointer;
+    box-shadow: 1px 1px 8px rgba(0, 0, 0, 0.521);
+}
+
+
+p {
+    font-size: 1.3rem;
+    word-spacing: 2px;
+}
+
+a {
+    font-size: 1.1rem;
+    text-decoration: none;
+    color: rgb(28, 146, 243);
+}
+h1,h2,h3 , .elmt4 {
+    font-family: 'Quando', serif;
+}
+
+p,span {
+    font-family: Arial, Helvetica, sans-serif;
+}
+a:hover, a:focus {
+    border-bottom: 1px solid gold;
+}
+
+/************************************************** Main website Area ********************************************/
+
+.art1 {
+    position: absolute;
+    width: 100vw;
+    z-index: 2;
+}
+
+/************************************************  MAIN SEC 1*****************************************************/
+.hero-sec {
+    overflow-y: hidden;
+    position: relative;
+    background-color: yellow;
+    height: 89vh;
+}
+.hero-curve {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    transform: rotate(180deg);
+}
+
+.hero-curve svg {
+    position: relative;
+    display: block;
+    width: calc(100% + 1.3px);
+    height: 72px;
+}
+
+.hero-curve .shape-fill {
+    fill: #FFFFFF;
+}
+
+.hero-heading1 {
+    position: relative;
+    top: 20%;
+    padding-top: 4rem;
+    display: flex;
+    justify-content: space-around;
+}
+.hero-col-1 {
+    width: 30%;
+}
+
+.hero-col-2 {
+    width: 60%;
+    position: relative;
+    top: -3rem;
+    display: flex;
+    justify-content: flex-end;
+}
+.sub-col1 {
+    width: 40%;
+}
+
+.sub-col2 {
+    width: 35%;
+
+}
+
+.hero-img {
+    position: relative;
+    top: -2.5rem;
+    float: right;
+    width: 100%;
+}
+.hero-head {
+    position: relative;
+    top: 1.8rem;
+    font-size: 1.7rem;
+}
+
+.hero-para {
+    letter-spacing: 0;
+    position: relative;
+    top: 2rem;
+    line-height: 1.5;
+    font-size: 1.2rem;
+}
+.elmt4 {
+    font-size: 3rem;
+}
+
+
+
+
+/************************************************  MAIN SEC2 *****************************************************/
+.main-sec2 {
+    /* background-image: linear-gradient(to right,rgb(214, 243, 237),rgb(226, 182, 230),rgb(214, 235, 181));
+    background-image: linear-gradient(to right,rgb(245, 245, 75)10%,rgb(240, 240, 54)70%,rgb(228, 228, 67)90%); */
+    background-color: white;
+    color: black;
+    margin-top: 5rem;
+    
+}
+
+.sec2-div1 {
+    background-color: rgb(72, 233, 185);
+    width: 100%;
+    padding: 1rem 5rem;
+    line-height: 1.5;
+
+}
+.div1-heading {
+    font-size: 1.8rem;
+    text-align: center;
+
+}
+.div1-para {
+    font-size: 1.2rem;
+    text-align: center;
+
+}
+/************************************************  MAIN SEC2 div2 ***********/
+.sec2-div2 {
+    width: 100%;
+    padding: 1rem;
+    display: flex;
+    justify-content: space-around;
+
+}
+.card {
+    position: relative;
+    background-color: white;
+    /* background-color: rgb(226, 182, 200);
+    background-color: rgb(72, 233, 185); */
+    width: 40%;
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.37),
+                -1px -1px 5px rgba(0, 0, 0, 0.37);
+    border-radius: 1rem;
+    padding: 0.3rem;
+    line-height: 1.5;
+}
+.card-heading {
+    color: hsl(201,100%,17%);
+    font-size: 2rem;
+
+}
+.api-img {
+    display: block;
+    margin: 0 auto;
+    width: 100%;
+    max-width: 300px;
+}
+
+.card-list {
+    margin-top: 1rem;
+    list-style-type: none;
+
+}
+
+.api-items {
+    font-size: 0.9rem;
+    margin-top: 0.3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* background-color: rgba(0, 0, 0, 0.13); */
+    /* box-shadow:1px 1px 3px rgba(0, 0, 0, 0.534); */
+    border-bottom: 0.7px solid rgba(0, 0, 0, 0.336);
+
+}
+.short-text {
+    display: none;
+}
+.api-items:last-of-type {
+    border-bottom: none;
+}
+.list-col1 {
+    width: 12%;
+
+}
+.list-col2 {
+    width: 87%;
+    padding-left: 0.3rem;
+}
+.card-icons {
+    width: 100%;
+    max-width: 60px;
+    border-radius: 50%;
+
+}
+
+/************************************************  MAIN SEC3 *****************************************************/
+
+.sec3-div1 {
+    background-color: yellow;
+    width: 100%;
+    margin-top: 2rem;
+    padding: 1rem 5rem;
+    line-height: 1.5;
+}
+
+/*********************************** Main sec3 Frontend projects cards *************/
+.sec3-div2 {
+    padding: 1.5rem;
+    margin-top: 2rem;
+    display: grid;
+    grid-template-columns: repeat(auto-fill,minmax(250px, 400px));
+    justify-content: center;
+    gap: 2rem;
+}
+.sec3-card {
+    position: relative;
+    background-color:white;
+    border-radius: 5px;
+    box-shadow: 1px 1px 5px hsla(0, 0%, 0%, 0.5),
+                -1px -1px 5px hsla(0, 0%, 0%, 0.5);
+}
+
+.sec3-card-heading {
+    clip-path: polygon(0 0 , 100% 50%, 0% 100%);
+    background-color: hsl(25, 100%, 50%);
+    background-color: yellow;
+    color: black;
+    font-weight: normal;
+    text-align: center;
+    padding: 2rem;
+    font-weight: 550;
+    font-size: 1.4rem;
+}
+
+
+.sec3-img {
+    display: block;
+    width: 100%;
+    padding: 0.5rem;
+    margin: 0 auto;
+    margin-bottom: 0.5rem;
+    border-radius: 30px;
+    box-shadow: none;
+    transition: all 300ms;
+}
+.sec3-img:hover,.sec3-img:focus {
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.5),
+                -1px -1px 5px rgba(0, 0, 0, 0.466);
+}
+.card-body > .sec3-img-link {
+    border-bottom: none;
+}
+.card-body > .card-text {
+    margin-bottom: 0.3rem;
+    color:hsl(347, 7%, 30%);
+    text-align: center;
+    font-family: sans-serif;
+    font-size: 0.8rem;
+    line-height: 1.3;
+    margin-top: 0.1rem;
+    padding: 1rem;
+    padding-bottom: 0.2rem;
+}
+
+.btn-group {
+    display: inline-block;
+    padding: 0.3rem 1rem;
+    margin-top: 0.3rem;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.card-btn {
+    color: black;
+    background-color:hsl(25, 100%, 50%);
+    background-color:yellow;
+    color: black;
+    margin-bottom: 0.5rem;
+    margin-right: 0.3rem;
+    width: 100px;
+    padding: 10px;
+    font-weight: 550;
+    border-radius: 30px;
+    border: none;
+    transition: all 300ms;
+    box-shadow: 1px 1px 5px hsla(0, 0%, 0%, 0.5);
+
+
+}
+
+.card-btn:hover,.card-btn:focus { 
+    cursor: pointer;
+    background-color: hsl(60, 100%, 40%);
+    color: black
+}
+
+/******************************************* MAIN SEC4 ***********************************/
+
+.main-sec4 {
+    line-height: 2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 3rem auto;
+}
+.cartoon {
+    width: 100%;
+    max-width: 100%;
+}
+ 
+
+
+
+/************************************************  MAIN SEC-5 *****************************************************/
+.main-sec5 {
+    position: relative;
+    background-color: rgb(72, 233, 185);
+    background-image: url('./images/bg3.svg');
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 0 auto;
+    padding: 4rem 1rem;
+    display: flex;
+    justify-content: space-around;
+    line-height: 1.5;
+}
+
+.sec5-text {
+    display: flex;
+    flex-direction: column;
+    width: 35%;
+    justify-content: center;
+    align-items: center;
+}
+.sec5-heading {
+    color: yellow;
+    text-align: center;
+    font-size: 1.8rem;
+
+}
+.sec5-para {
+    color: white;
+    line-height: 2;
+    word-break: break-all;
+    font-size: 1.2rem;
+}
+.sec5-email {
+    width: 30%;
+
+}
+.form {
+    width: 100%;
+    display: flex;
+    flex-direction: column; 
+}
+
+label {
+    font-size: 1.2rem;
+    color: yellow;
+}
+.input-field {
+    font-size: 1.2rem;
+    border: 2px solid purple;
+    outline: none;
+    width: 100%;
+    padding: 0.5rem;
+    border-radius: 30px;
+    margin-bottom: 0.5rem;
+
+}
+textarea {
+    outline: none;
+    padding: 0;
+    font-size: 1.2rem;
+    width: 100%;
+    border: 2px solid purple;
+    border-radius: 30px;
+    margin-bottom: 0.3rem;
+
+}
+.submit-btn {
+    cursor:pointer;
+    margin-bottom: 0.3rem;
+    font-size: 1.2rem;
+    text-align: center;
+    padding: 0.5rem 2rem;
+    border-radius: 30px;
+    background-color: yellow;
+
+}
+.bottom-para {
+    position: absolute;
+    bottom: 3%;
+    left: 50%;
+    transform: translateX(-50%);
+    color: yellow;
+    font-size: 0.9rem;
+    padding: 0.2rem 0.5rem;
+    padding-top: 2rem;
+}
+
+
+/******************************************** Github section ************************************/
+
+.sec1 {
+    width: 100%;
+    height: 0;
+    opacity: 0;
+    background-color: darkcyan;
+    transition: all 300ms;
+
+}
+
+.sec1-toggle {
+    height: 89vh;
+    opacity: 1;
+    transition: all 300ms;
+}
+
+.github-search {
+    width: 90%;
+    margin: 1rem auto;
+}
+
+.github-input {
+    padding: 0.5rem 5px;
+    width: 40%;
+    border-radius: 0.5rem;
+    font-size: 1.2rem;
+    border:1px solid chartreuse;
+    outline: none;
+}
+.github-btn {
+    width: 8%;
+    padding:0.4rem 5px;
+    font-size: 1.3rem;
+    background-color:chartreuse;
+    color: white;
+    box-shadow: 1px 1px 5px rgba(48, 27, 27, 0.841);
+    border-radius: 0.5rem;
+    border:1px solid chartreuse;
+    outline: none;
+}
+
+.github-row1 ,.github-row2 {
+    width: 95%;
+    margin: 0 auto;
+    margin-top: 1rem;
+    display: flex;
+    justify-content: space-around;
+}
+
+.github-col-1 {
+    width: 30%;
+}
+.github-img {
+    display: block;
+    margin: 0 auto;
+    width: 100%;
+    max-width: 300px;
+    border-radius: 50%;
+
+}
+
+.github-name {
+    text-align: center;
+    word-break: break-all;
+    font-size: 2.2rem;
+    color: chartreuse;
+}
+
+.github-col-2 {
+    width: 65%;
+}
+
+.github-para {
+    color: white;
+    font-size: 1.2rem;
+    word-spacing: 3px;
+}
+
+/*********************************** Setting github repos *********************/
+.github-row2 {
+    display: grid;
+    grid-template-columns: repeat(auto-fill,minmax(320px,1fr));
+    gap: 2rem;
+    margin-top: 2rem;
+    justify-content: center;
+    margin-bottom: 2rem;
+
+}
+.repo-div {
+    height: 300px;
+    position: relative;
+    background-color: white;
+    padding: 0.5rem;
+    border-radius: 0.5rem;
+    box-shadow: 1px 0.3px 5px rgba(128, 255, 0, 0.603);
+}
+
+.repo-heading {
+    font-size: 1.3rem;
+    color: black;
+    text-align: center;
+    padding: 1rem;
+    border-bottom: 1px solid black;
+}
+
+.repo-info {
+    margin: 1rem;
+    font-size: 1.1rem;
+    color: black;
+    text-align: center;
+}
+
+.repo-link {
+    position: absolute;
+    left: 0.3rem;
+    bottom: 0.5rem;
+    display: block;
+    text-decoration: none;
+    font-size: 1.1rem;
+    cursor: pointer;
+}
+.repo-link:hover , .repo-link:focus {
+    border-bottom: 1px solid blue;
+}
+
+@media  (min-width:801px) and (max-width:1100px) {
+    .github-input {
+        width: 60%;
+    }
+    .github-btn {
+        width: 12%;
+    }
+
+}
+
+@media (min-width:701px) and (max-width:800px) {
+    .github-input {
+        width: 60%;
+    }
+    .github-btn {
+        width: 15%;
+    }
+
+}
+@media (min-width:300px) and (max-width:700px) {
+    .github-search {
+        width: 95%;
+    }
+    .github-input {
+        font-size: 0.9rem;
+        width: 77%;
+    }
+    .github-btn {
+        width: 20%;
+        font-size: 1rem;
+    }
+    .github-col-1 {
+        display: flex;
+        flex-direction: column;
+    }
+    .github-para {
+        font-size: 0.9rem;
+
+    }
+    .github-name {
+        width: 100%;
+        font-size: 0.9rem;
+
+        color: chartreuse;
+    }
+    .repo-heading {
+        font-size: 1.2rem;
+    }
+    .repo-info {
+        font-size: 1rem;
+    }
+    .repo-link {
+        font-size: 0.9rem;
+    }
+}
+
+
+/*********************************** End github section ************************************************/
+
+
+/********************************************************** SEc2 author-section ************************************************/
+
+.sec2 {
+    width: 100%;
+    height: 0;
+    margin: 0;
+    padding:0;
+    opacity: 1;
+    background-image: linear-gradient(to right , rgb(156, 238, 206) 50%,rgb(76, 207, 190) 90%,rgb(76, 207, 190));
+    transition: all 300ms;
+}
+
+.sec2-toggle {
+    height: 90vh;
+    opacity: 1;
+    transition: all 300ms;
+}
+.author-search {
+    margin: 1rem auto;
+    width: 50%;
+}
+.sec2 .sec2-para {
+    font-size: 1.2rem;
+    left: 0%;
+    width: 100%;
+    color: green;
+}
+
+
+
+.author-input {
+    padding: 0.3rem 5px;
+    width: 70%;
+    border-radius: 0.3rem;
+    font-size: 1.1rem;
+}
+.author-btn {
+    padding: 0.3rem;
+    font-size: 1.2rem;
+    background-color:chartreuse;
+    color: white;
+    border: none;
+    border-radius: 0.3rem;
+    outline: none;
+    box-shadow: 1px 1px 5px rgba(48, 27, 27, 0.841);
+}
+.author-btn:hover,.author-btn:focus {
+    cursor: pointer;
+    box-shadow: 1px 3px 8px rgba(48, 27, 27, 0.941);
+}
+.author-img {
+    position: relative;
+    left: 25%;
+    margin: 0 auto;
+    border-radius: 50%;
+}
+.sec2 p {
+    position: relative;
+    left: 15%;
+    margin: 1rem auto;
+    width: 80%;
+    font-size: 2rem;
+}
+@media  (min-width:801px) and (max-width:1100px) {
+    .author-search {
+        margin: 1rem auto;
+        width: 60%;
+    }
+    .sec2 .sec2-para {
+        font-size: 1.1rem;
+        width: 100%;
+    }
+    .author-input {
+        width: 77%;
+        font-size: 1.2rem;
+    }
+    .author-btn {
+        width: 20%;
+        font-size: 1.2rem;
+    }
+    .author-img {
+
+    }
+    
+    .sec2 p {
+        margin-top: 0.5rem;
+        font-size: 1.2rem;
+
+    }
+    
+}
+
+@media (min-width:701px) and (max-width:800px) {
+    .author-search {
+        margin: 1rem auto;
+        width: 70%;
+    }
+    .sec2 .sec2-para {
+        font-size: 1.1rem;
+        width: 100%;
+    }
+    .author-input {
+        width: 77%;
+        font-size: 1.2rem;
+    }
+    .author-btn {
+        padding: 0.3rem 5px;
+        font-size: 1.2rem;
+        width: 20%;
+    }
+    .author-img {
+        display: block;
+        left: 15%;
+        margin: 0;
+
+    }
+    
+    .sec2 p {
+        left: 0;
+        margin-top: 0.5rem;
+        width: 70%;
+        font-size: 1.2rem;
+
+    }
+
+}
+@media (min-width:300px) and (max-width:700px) {
+    .author-search {
+        margin: 1rem auto;
+        width: 95%;
+    }
+    .sec2 .sec2-para {
+        font-size: 1rem;
+        width: 100%;
+    }
+    .author-input {
+        width: 77%;
+        font-size: 1rem;
+    }
+    .author-btn {
+        padding: 0.3rem 5px;
+        font-size: 1rem;
+        width: 20%;
+    }
+    .author-img {
+        display: block;
+        left: 10%;
+        margin: 0;
+
+    }
+    
+    .sec2 p {
+        left: 0%;
+        margin-top: 0.5rem;
+        width: 80%;
+        font-size: 1rem;
+
+    }
+
+}
+
+
+/*********************************** End author section ***************************/
+
+/*********************************************** Photos API  section ************************************************/
+
+.sec3 {
+    width: 100%;
+    background-color: black;
+    color: white;
+    opacity: 0;
+    height: 0;
+    transition: all 300ms;
+}
+.sec3-toggle {
+    height: 89.5vh;
+    opacity: 1;
+}
+
+.photos-search {
+    width: 60%;
+    margin: 1rem auto;
+}
+.sec3-para {
+    padding: 1rem 0.1rem;
+    font-size: 1.2rem;
+    width: 100%;
+    color: rgb(161, 66, 238);
+}
+.photo-input {
+    outline: chartreuse;
+    border: 2px solid chartreuse;
+    padding: 0.3rem 5px;
+    width: 70%;
+    height: 7vh;
+    border-radius: 0.3rem;
+    font-size: 1.2rem;
+}
+.photo-btn {
+    width: 15%;
+    height: 7vh;
+    padding: 0.3rem;
+    font-size: 1.2rem;
+    background-color:chartreuse;
+    color: white;
+    border: none;
+    border-radius: 0.3rem;
+    outline: none;
+    box-shadow: 1px 1px 5px rgba(255, 255, 255, 0.555);
+}
+.photo-btn:hover,.photo-btn:focus {
+    cursor: pointer;
+    box-shadow: 1px 3px 5px rgba(96, 236, 143, 0.855);
+}
+
+.random-imgs {
+    list-style-type: none;
+    /* display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap; */
+    display: grid;
+    grid-template-columns: repeat(auto-fill , minmax(280px,400px));
+    justify-content: center;
+    gap: 1rem;
+}
+
+.random-img-list {
+    padding: 0.3rem;
+}
+.random-img {
+    width: 100%;
+    border-radius: 0.8rem;
+    box-shadow: 1px 1px 5px rgba(255, 255, 255, 0.555);
+    margin-bottom: 0.5rem;
+}
+
+@media (min-width:701px) and (max-width:800px) {
+    .photos-search {
+        margin: 1rem auto;
+        width: 80%;
+    }
+}
+@media (min-width:300px) and (max-width:700px) {
+    .photos-search {
+        width: 95%;
+        margin: 1rem auto;
+    }
+    .sec3-para {
+        font-size: 1rem;
+        font-weight: normal;
+    }
+    .photo-input {
+        padding: 0.5rem 0.2rem;
+        font-size: 1rem;
+        width: 70%;
+        height: auto;
+    }
+    .photo-btn {
+        padding: 0.5rem 0.2rem;
+        font-size: 1rem;
+        width: 25%;
+        height: auto;
+    }
+
+    .random-img-list p  {
+        font-size: 1rem;
+
+    }
+    .random-img-list a {
+        font-size: 0.9rem;
+
+    }
+}
+/*********************************************************** Food Recipe *******************************************/
+
+/********************************** Search header Section ****************************************/
+
+.sec4 {
+    background-color:#363232;
+    width: 100%;
+    opacity: 0;
+    height: 0;
+    transition: all 300ms;
+}
+.sec4-toggle {
+    height: auto;
+    opacity: 1;
+}
+.food-head {
+    width: 90%;
+    margin: 2rem auto;
+
+}
+
+
+.food-heading {
+    text-align: center;
+    margin-bottom: 2rem;
+    font-size: 2.5rem;
+    color:rgb(0, 255, 34);
+}
+.food-para {
+    margin-top: 0.3rem;
+    width: 70%;
+    font-size: 1.2rem;
+    color: white;
+}
+
+.food-links {
+    color: black;
+    text-decoration: none;
+    font-size: 1rem;
+}
+.search-div {
+    display: flex;
+}
+.food-input {
+    outline: none;
+    width: 70%;
+    padding: 0.5rem 0.5rem;
+    border-radius: 0.3rem;
+    font-size: 1.5rem;
+}
+.food-search {
+    position: relative;
+    left: -5%;
+    border-radius: 10%;
+    padding: 0.5rem;
+    font-size: 2rem;
+    color: black;
+    opacity: 0.5;
+    transition: all 300ms;
+
+}
+
+.search:hover ,.search:focus {
+    cursor:pointer;
+    opacity: 0.8;
+}
+.food-head-btn {
+    cursor: pointer;
+    font-size: 1.3rem;
+    padding: 0.5rem;
+    color: black;
+    border-radius: 0.3rem;
+    background-color: yellow;
+}
+.food-sec {
+    width: 90%;
+    padding: 1rem;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fill,minmax(300px,1fr));
+    gap: 1.5rem;
+}
+
+/********************************************** Receipes Boxes ******************************************/
+.recipe-container{
+    position: relative;
+    border: 2px solid rgba(255, 255, 255, 0.884);
+    border-radius: 1.5rem;
+    background-color: #6a706ace;
+    box-shadow: 0.2px 2px 8px rgba(255, 255, 255, 0.514);
+    transition: transform 300ms;
+}
+
+.recipe-container:hover , .recipe-container:focus {
+    cursor: pointer;
+    transform: scale(1.05);
+    z-index: 5;
+
+}
+.recipe-img {
+    width: 100%;
+    max-width: 800px;
+    border-top-left-radius: 1.5rem;
+    border-top-right-radius: 1.5rem;
+}
+.recipe-heading {
+    padding: 0.5rem;
+    padding-bottom: 0;
+    text-transform: uppercase;
+    color: yellow;
+    font-size: 1.3rem;
+}
+.recipe-para{
+    overflow-y: hidden;
+    font-family:sans-serif;
+    padding: 0.2rem 0.5rem;
+    font-size: 1.1rem;
+    line-height: 1.2;
+    color: white;
+    max-height: 28vh;
+}
+hr {
+    margin: 0.5rem 0;
+}
+.recipe-icons-div {
+    display: flex;
+    justify-content: space-around;
+}
+.iconText-div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-content: flex-end;
+
+}
+.icon-text {
+    padding-top: 0.3rem;
+    font-size: 0.75rem;
+    color: white;
+
+}
+.recipe-icon {
+    font-size: 20px;
+    color: yellow;
+}
+
+
+.food-info {
+    position: absolute;
+    top: 15%;
+    left: -80%; 
+    transform: translateX(-50%); 
+    background-color: white;
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+    border-radius: 1rem;
+    z-index: 10;
+    opacity: 0;
+    overflow-x: hidden;
+    transition: all 300ms;
+}
+
+.recipe2CloseBtn {
+    position: absolute;
+    top: 1%;
+    right: 2%;
+    font-size: 1.5rem;
+    cursor: pointer;
+    border: none;
+    background-color: transparent;
+}
+.recipe2CloseBtn:hover ,.recipe2CloseBtn:focus {
+    color: firebrick;
+}
+
+
+.recipe2-head {
+    color: firebrick;
+    text-transform: capitalize;
+    font-size: 2.5rem;
+    text-align: center;
+    padding: 0.5rem;
+}
+.recipe2-img {
+    display: block;
+    max-width: 100%;
+    border-radius: 0.5rem;
+    width: max-content;
+    margin: 1rem auto;
+}
+
+.recipe2-heading {
+    padding-bottom: 0.1rem;
+    font-size: 1.5rem;
+    color: cornflowerblue;
+}
+.recipe2-para {
+    font-family:sans-serif;
+    font-size: 1rem;
+}
+.recipe2-heading2 {
+    margin-top: 1rem;
+    font-size: 1.3rem;
+    color: cornflowerblue;
+}
+.recipe2-nut {
+    display: flex;
+    justify-content: space-around;
+}
+.nut-list {
+    font-size: 1.1rem;
+    font-weight: bold;
+}
+
+.recipe2-items {
+    margin-top: 0.5rem;
+    position: relative;
+    left: 8%;
+    order: 0;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    
+}
+.item-para {
+    width: 32%;
+    padding-right: 1rem;
+    padding-top: 0.5rem;
+    font-size: 1.1rem;
+    font-weight: bold;
+
+}
+.recipe2-urls {
+    margin-top: 0.5rem;
+    display: flex;
+    justify-content: space-around;
+}
+
+.recipe2-urls , .recipe2-heading2:nth-of-type(3) {
+    order: 1;
+}
+
+.recipe2-link {
+    text-decoration: none;
+    font-size: 1.1rem;
+    color: green;
+    border: 1px solid transparent;
+}
+
+.recipe2-link:hover , .recipe2-link:active {
+    color: blue;
+    cursor: pointer;
+    border-bottom: 1px solid blue;
+}
+@media  (min-width:801px) and (max-width:1100px) {
+    .food-heading {
+        font-size: 2.1rem;
+    }
+    .food-para {
+        margin-top: 0.5rem;
+        width: 100%;
+    }
+    .food-input {
+        font-size: 1.4rem;
+    }
+    .food-search {
+        font-size: 2.8rem;
+        left: -8%
+    }
+    .food-head-btn {
+        font-size: 1.3rem;
+    }
+
+    .food-info {
+        width: 95%;
+    }
+}
+
+@media (min-width:701px) and (max-width:800px) {
+    
+    .food-heading {
+        font-size: 2rem;
+    }
+    .food-para {
+        margin-top: 0.5rem;
+        width: 100%;
+        font-size: 1.1rem;
+    }
+    .food-input {
+        width: 80%;
+        padding: 0.1rem;
+        font-size: 1rem;
+    }
+    .food-search {
+        font-size: 1.8rem;
+        left: -8%
+    }
+    .food-head-btn {
+        padding: 0.1rem;
+        font-size: 1rem;
+    }
+    .recipe-container {
+        border-radius: 1rem;
+        border-bottom-left-radius: 0.3rem;
+        border-bottom-right-radius: 0.3rem;
+    }
+    .recipe-img {
+        border-top-left-radius: 1rem;
+        border-top-right-radius: 1rem;
+    }
+    .recipe-heading {
+        font-size: 1.2rem;
+        padding: 0.2rem;
+    }
+    .recipe-para {
+        font-size: 1rem;
+        line-height: 1.1;
+    }
+    .icon-text {
+        padding-top: 0.3rem;
+        font-size: 0.6rem;
+        font-weight: normal;
+        color: whitesmoke;
+    
+    }
+    .recipe-icon {
+        font-size: 12px;
+        color: yellow;
+    }
+    .food-info {
+        width: 95%;
+    }
+    
+    .recipe2CloseBtn {
+        font-size: 1.3rem;
+    }
+    .recipe2-head {
+        font-size: 1.3rem;
+        padding: 0.3rem;
+    }
+    .recipe2-heading {
+        font-size: 1.2rem;
+    }
+    .recipe2-para {
+        font-size: 0.9rem;
+    }
+    .recipe2-heading2 {
+        font-size: 1.1rem;
+    }
+    .nut-list {
+        font-size: 0.9rem;
+    }
+    .item-para {
+        font-size: 0.9rem;
+    }
+    .recipe2-link {
+        font-size: 0.9rem;
+    }
+    .food-info a {
+        font-size: 0.9rem;
+    }
+
+}
+
+@media (min-width:300px) and (max-width:700px) {
+    .food-heading {
+        font-size: 1.5rem;
+    }
+    .food-para {
+        margin-top: 0.5rem;
+        width: 100%;
+        font-size: 1rem;
+    }
+    .search-div {
+        flex-direction: column;
+    }
+    .food-input {
+        width: 100%;
+        padding: 0.7rem 0.2;
+        font-size: 1rem;
+        border-radius: 0.5rem;
+    }
+    .food-search {
+        width: 15%;
+        left: 85%;
+        top: -2.5rem;
+        font-size: 1.7rem;
+    }
+    .food-head-btn {
+        position: relative;
+        top: -2rem;
+        width: 40%;
+        padding: 0.2rem;
+        font-size: 0.9rem;
+    }
+    .recipe-container {
+        border-radius: 0.5rem;
+        border-bottom-left-radius: 0.3rem;
+        border-bottom-right-radius: 0.3rem;
+    }
+    .recipe-img {
+        border-top-left-radius: 0.5rem;
+        border-top-right-radius: 0.5rem;
+    }
+    .recipe-heading {
+        font-size: 0.9rem;
+        padding: 0.2rem;
+    }
+    .recipe-para {
+        font-size: 0.8rem;
+        line-height: 1.1;
+    }
+    .icon-text {
+        padding-top: 0.3rem;
+        font-size: 0.5rem;
+        font-weight: normal;
+        color: whitesmoke;
+    
+    }
+    .recipe-icon {
+        font-size: 14px;
+        color: yellow;
+    }
+    .food-info {
+        width: 95%;
+    }
+    
+    .recipe2CloseBtn {
+        font-size: 1.1rem;
+    }
+    .recipe2-head {
+        font-size: 1.2rem;
+        padding: 0.2rem;
+    }
+    .recipe2-heading {
+        font-size: 1.1rem;
+    }
+    .recipe2-para {
+        font-size: 0.8rem;
+    }
+    .recipe2-heading2 {
+        font-size: 0.9rem;
+    }
+    .nut-list {
+        font-size: 0.7rem;
+    }
+    .item-para {
+        font-size: 0.7rem;
+    }
+    .recipe2-link {
+        font-size: 0.7rem;
+    }
+    .food-info a {
+        font-size: 0.7rem;
+    }
+
+}
+/********************************************************* Responsive Section *****************************/
+
+@media  (min-width:801px) and (max-width:1100px) {
+    
+    .api-btns  {
+        justify-content: space-around;
+    }
+    
+    .hero-heading1 {
+        top: 20%;
+        padding-top: -3rem;
+    }
+    .hero-col-2 {
+        top: -1rem;
+    }
+    .hero-head {
+        font-size: 1.3rem;
+    }
+    .hero-para {
+        font-size: 0.9rem;
+    }
+    .hero-img {
+        top: -1rem;
+    }
+    .elmt4 {
+        font-size: 1.7rem;
+    }
+     /********************************* MAIN SEC2 div2 ************/
+    
+     .sec2-div2 {
+        padding: 2rem 0.5rem;
+    }
+    .card {
+        width: 46%;
+        border-radius: 0.7rem;
+        line-height: 1.1;
+    }
+    .card-heading {
+        font-size: 1.7rem;
+    }
+    .api-items {
+        font-size: 0.8rem;
+        margin-top: 0.2rem;
+    }
+    .list-col1 {
+        width: 15%;
+    }
+    .list-col2 {
+        width: 80%;
+    }
+    .card-icons {
+        max-width: 80px;
+    }
+
+    /********************************** MAIN SEC5 ********/
+
+    .main-sec5 {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .sec5-text , .sec5-email {
+        width: 80%;
+    }
+    .form {
+        margin: 1rem auto;
+        width: 60%;
+        justify-content: center;
+        align-items: center;
+    }
+    .form label {
+        align-self: flex-start;
+    }
+}
+
+@media (min-width:701px) and (max-width:800px) {
+    .hero-heading1 {
+        overflow-y: hidden;
+        top: 17%;
+        padding-top: -3rem;
+    }
+    .hero-col-2 {
+        top: 0rem;
+    }
+    .hero-head {
+        font-size: 1.1rem;
+    }
+    .hero-para {
+        font-size: 0.8rem;
+    }
+    .hero-img {
+        top: 0rem;
+    }
+    .elmt4 {
+        font-size: 1.5rem;
+    }
+
+    /**************************** main sec2 div 2 ***********/
+
+    .sec2-div2 {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .card {
+        width: 80%;
+        margin-top: 1rem;
+    }
+    .card-para {
+        font-size: 4rem;
+    }
+    .api-items {
+        font-size: 1.1rem;
+    }
+     /********************************** MAIN SEC5 ********/
+
+     .main-sec5 {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .sec5-text , .sec5-email {
+        width: 80%;
+    }
+    .form {
+        margin: 1rem auto;
+        width: 60%;
+        justify-content: center;
+        align-items: center;
+    }
+    .form label {
+        align-self: flex-start;
+    }
+}
+
+@media (min-width:300px) and (max-width:700px) {
+    .api-btns {
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .header-btn {
+        width: 40%;
+    }
+
+    /***************************************** Main sec1 Hero sec ********/
+    .hero-sec {
+        height: 90vh;
+    }
+    .hero-heading1 {
+        flex-direction: column;
+        padding-top: 1.5rem;
+        justify-content: center;
+        align-items: center;
+    }
+    .hero-col-1 {
+        display: none;
+    }
+    .hero-col-2 {
+        margin-top: 5rem;
+        width: 90%;
+        height: 50vh;
+        margin-left: 3rem;
+    }
+    .sub-col1 , .sub-col2 {
+        width: 50%;
+    }
+    .hero-img {
+        top: 0rem;
+        left: -1rem;
+
+
+    }
+    .hero-head {
+        top: 1.4rem;
+        font-size: 1.5rem;
+    }
+    
+    .hero-para {
+        line-height: 1.2;
+        font-size: 1rem;
+    }
+    .elmt4 {
+        font-size: 1.7rem;
+    }
+
+    /********************************* MAIN SEC2 div1 ************/
+    .sec2-div1 {
+        padding: 1rem 0.3rem;
+        line-height: 1.2;
+    }
+    .div1-heading {
+        font-size: 1.7rem;
+    }
+    .div1-para {
+        font-size: 1rem;
+        margin-top: 0.3rem;
+        text-align: left;
+
+    }
+    /**************************** main sec2 div 2 ***********/
+
+    .sec2-div2 {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .card {
+        width: 100%;
+        margin-top: 1rem;
+        line-height: 1.2;
+    }
+    .card-heading {
+        overflow-y: hidden;
+        position: relative;
+        left: 2%;
+        top: 3%;
+        font-size: 1.5rem;
+    }
+    .card-list {
+        margin-top: 0.1rem;
+    }
+    .api-items {
+        font-size: 0.8rem;
+    }
+    .long-text {
+        display: none;
+    }
+    .short-text {
+        display: block;
+    }
+    .card-icons {
+        width: 100%;
+        max-width: 40px;
+        border-radius: 50%;
+    
+    }
+    .short-text a {
+        font-size: 0.8rem;
+    }
+   .list-col1 {
+       width: 15%;
+   }
+   .list-col2 {
+       width: 85%;
+   }
+
+   /************************************* MAIN SEC3 ************/
+
+   .sec3-div1 {
+       padding: 1rem 0.5rem;
+   }
+   .div1-heading {
+       font-size: 1.3rem;
+   }
+   .sec2-para {
+       font-size: 0.9rem;
+   }
+    
+   .sec3-div2 {
+       width: 98%;
+   }
+   .sec3-card-heading {
+       font-size: 1.2rem;
+   }
+   .card-body > .card-text {
+       line-height: 1.1;
+   }
+
+   /************************ MAIN SEC-4 ****************/
+   .main-sec4 {
+       flex-direction: column;
+   }
+    /********************************** MAIN SEC5 ********/
+
+    .main-sec5 {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        line-height: 1.5;
+        padding: 1rem 0.5rem;
+        padding-bottom: 5rem;
+    }
+    .sec5-text , .sec5-email {
+        width: 95%;
+    }
+    .sec5-heading {
+        font-size: 1.5rem;
+    }
+    .sec5-para {
+        font-size: 0.9rem;
+        line-height: 1.1;
+        font-weight: normal;
+        word-break: normal;
+    }
+    .form {
+        margin: 1rem auto;
+        width: 95%;
+        justify-content: center;
+        align-items: center;
+    }
+    .form label {
+        align-self: flex-start;
+    }
+    .bottom-para {
+        width: 100%;
+        text-align: center;
+    }
+
+}
+ .art2-toggle .main-sec2 {
+    display: none;
+}
+.art2-toggle .main-sec3 {
+    display: none;
+}
+.art2-toggle .main-sec4 {
+    display: none;
+}
+.art2-toggle .main-sec5 {
+    display: none;
+}
+
