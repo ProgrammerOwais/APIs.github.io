@@ -33,7 +33,7 @@ Link to the Spoonacular Food API : https://spoonacular.com/food-api/docs
 This API is specially for Github users. With the help of this API you can access
 Github control to manage your data & files etc. With security purpose I only used
 this API for public use. 
-The main feature I used you can access any github public data by typing its name in search bar.
+The main feature I used you can access any github user public data by typing its name in search bar.
 Link to the Github API : https://docs.github.com/en/rest
 
 ### OpenLibrary API

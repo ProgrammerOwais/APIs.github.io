@@ -363,7 +363,7 @@ a:hover, a:focus {
 /************************************************  MAIN SEC-5 *****************************************************/
 .main-sec5 {
     position: relative;
-    background-color: rgb(72, 233, 185);
+    background-color: black;
     background-image: url('./images/bg3.svg');
     background-position: center center;
     background-repeat: no-repeat;
