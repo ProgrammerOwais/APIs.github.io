@@ -1,437 +1,607 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <script src="https://kit.fontawesome.com/a1a5d18a86.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="style.css">
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <script
+      src="https://kit.fontawesome.com/a1a5d18a86.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="style.css" />
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Owais APIs</title>
-</head>
-<body>
-
+  </head>
+  <body>
     <!-- APIs section -->
-   <header>
-    <article class="art1"> 
+    <header>
+      <article class="art1">
         <div class="api-btns container1">
-            <button type="button" class="header-btn photo-toggle">Photos API</button>
-            <button type="button" class="header-btn food-toggle">Food API</button>
-            <button type="button" class="header-btn github-toggle">Github API</button>
-            <button type="button" class="header-btn author-toggle">Authors API</button>
+          <button type="button" class="header-btn photo-toggle">
+            Photos API
+          </button>
+          <button type="button" class="header-btn food-toggle">Food API</button>
+          <button type="button" class="header-btn github-toggle">
+            Github API
+          </button>
+          <button type="button" class="header-btn author-toggle">
+            Authors API
+          </button>
         </div>
         <div class="sec1 github">
-           <div class="sec1-responsive container1">
+          <div class="sec1-responsive container1">
             <div class="github-search">
-                <input type="text" class="github-input" placeholder="Enter github user name">
-                 <button type="button" class="github-btn">Search</button>
+              <input
+                type="text"
+                class="github-input"
+                placeholder="Enter github user name"
+              />
+              <button type="button" class="github-btn">Search</button>
             </div>
             <div class="github-row1">
-                <div class="github-col-1">
-
-                </div>
-                <div class="github-col-2"></div>
+              <div class="github-col-1"></div>
+              <div class="github-col-2"></div>
             </div>
-            <div class="github-row2">
-
-            </div>
-           </div>
+            <div class="github-row2"></div>
+          </div>
         </div>
         <div class="sec2">
-                <div class="author-search">
-                    <p class="sec2-para">Hi there in this API you can find info about any author Including their full name , 
-                        top work etc. All you need is to enter the author name.
-                     </p>
-                    <input type="text" class="author-input" placeholder="e.g. John C. Maxwell">
-                    <button type="button" class="author-btn" >Search</button>
-                </div>
-                <div class="author-info">
-                    <div class="author-name"> </div>
-                    <div class="author-work"></div>
-                    <div class="author-birth"></div>
-                    <div class="author-count"></div>
-                </div>
+          <div class="author-search">
+            <p class="sec2-para">
+              Hi there in this API you can find info about any author Including
+              their full name , top work etc. All you need is to enter the
+              author name.
+            </p>
+            <input
+              type="text"
+              class="author-input"
+              placeholder="e.g. John C. Maxwell"
+            />
+            <button type="button" class="author-btn">Search</button>
+          </div>
+          <div class="author-info">
+            <div class="author-name"></div>
+            <div class="author-work"></div>
+            <div class="author-birth"></div>
+            <div class="author-count"></div>
+          </div>
         </div>
         <div class="sec3">
-            <div class="photos-search">
-                <p class="sec3-para">
-                    In This API you can access any photo 
-                    from best photographers by just typing its name.
-                    If you liked the photo then you can visit to photographer web to find more 
-                    photos like that.
-                 </p>
-                <input type="text" class="photo-input" placeholder="e.g. Enter the photo name">
-                <button type="button" class="photo-btn" >Search</button>
-            </div>
-            <ul class="random-imgs">
-            </ul>
+          <div class="photos-search">
+            <p class="sec3-para">
+              In This API you can access any photo from best photographers by
+              just typing its name. If you liked the photo then you can visit to
+              photographer web to find more photos like that.
+            </p>
+            <input
+              type="text"
+              class="photo-input"
+              placeholder="e.g. Enter the photo name"
+            />
+            <button type="button" class="photo-btn">Search</button>
+          </div>
+          <ul class="random-imgs"></ul>
         </div>
         <div class="sec4">
-            <div class="sec4-responsive container1">
-                <div class="food-head">
-                    <h2 class="food-heading">Welcome to Owais Recipe API</h2>
-                     <div class="search-div">
-                      <input type="text" name="text" class="food-input" placeholder="Enter your favorite recipe"><i class="food-search fas fa-search"></i>
-                         <button type="button" class="food-head-btn" onclick="randomRecipes()">View random recipes</button>
-                     </div>
-                    <p class="food-para">
-                      Welcome to recipe web app. In this app you can find different recipes with different
-                      tastes.You can search any favorite recipe which you want & than you will get whole
-                      info about recipe just by clicking on recipe item. So what are you waiting for Enter 
-                      your favorite recipe...
-                    </p>
-                </div>
-                <div class="food-sec">
-                </div>
-                <div class="food-info ">
-                </div>
+          <div class="sec4-responsive container1">
+            <div class="food-head">
+              <h2 class="food-heading">Welcome to Owais Recipe API</h2>
+              <div class="search-div">
+                <input
+                  type="text"
+                  name="text"
+                  class="food-input"
+                  placeholder="Enter your favorite recipe"
+                /><i class="food-search fas fa-search"></i>
+                <button
+                  type="button"
+                  class="food-head-btn"
+                  onclick="randomRecipes()"
+                >
+                  View random recipes
+                </button>
+              </div>
+              <p class="food-para">
+                Welcome to recipe web app. In this app you can find different
+                recipes with different tastes.You can search any favorite recipe
+                which you want & than you will get whole info about recipe just
+                by clicking on recipe item. So what are you waiting for Enter
+                your favorite recipe...
+              </p>
             </div>
+            <div class="food-sec"></div>
+            <div class="food-info"></div>
+          </div>
         </div>
-    </article>
-   </header>
+      </article>
+    </header>
     <!-- Main Section -->
     <main>
-        <article class="art2">
-            <div class="hero-sec">
-                <div class="hero-curve">
-                    <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
-                        <path d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z" class="shape-fill"></path>
-                    </svg>
-                </div>
-                <div class="hero-heading1 container1">
-                    <div class="hero-col-1">
-                        <h2 class="hero-head">
-                            Web APIs Example
-                        </h2>
-                        <p class="hero-para">
-                            In this web I am gonna show you my web APIs Examples.
-                            You will find different APIs of different programs. At the 
-                            top on clicking any button you will open the APIs. So what are
-                            you waiting for.
-                        </p>
-                    </div>
-                    <div class="hero-col-2">
-                        <div class="sub-col1">
-                            <h2 class="hero-head">
-                                <span class="elmt4">4</span> Different APIs
-                            </h2>
-                            <p class="hero-para">
-                                I use four different APIs each has its own functionality. Every 
-                                API contain well worthy information with bundle of useful data & links
-                                On clicking any API , it will lead you to that API example.
-                            </p>
-                        </div>
-                        <div class="sub-col2">
-                            <img src="./images/person2.png" class="hero-img" alt="hero image">
-                        </div>
-                    </div>
-                </div>
+      <article class="art2">
+        <div class="hero-sec">
+          <div class="hero-curve">
+            <svg
+              data-name="Layer 1"
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 1200 120"
+              preserveAspectRatio="none"
+            >
+              <path
+                d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z"
+                class="shape-fill"
+              ></path>
+            </svg>
+          </div>
+          <div class="hero-heading1 container1">
+            <div class="hero-col-1">
+              <h2 class="hero-head">Web APIs Example</h2>
+              <p class="hero-para">
+                In this web I am gonna show you my web APIs Examples. You will
+                find different APIs of different programs. At the top on
+                clicking any button you will open the APIs. So what are you
+                waiting for.
+              </p>
             </div>
-            <div class="main-sec2">
-                <div class="sec2-div1">
-                    <h2 class="div1-heading container1">
-                        Frontend Web APIs
-                    </h2>
-                    <p class="div1-para container1">
-                        When writing code for the Web, there are a large number of Web APIs available.
-                        API stands for "Application Program Interface". It is a prebuilt program with
-                        complex function & lot of data but you can use all information in a simple way.
-                        That's the big advantage of APIs.
-                    </p>
-                </div>
-                <div class="sec2-div2 container1">
-                    <div class="card free-api">
-                        <h3 class="card-heading">
-                            Free API
-                        </h3>
-                        <p class="card-para">
-                            <img src="./images/api5.png" alt="api-img" class="api-img">
-                             <!-- In free API you just need to sign up or
+            <div class="hero-col-2">
+              <div class="sub-col1">
+                <h2 class="hero-head">
+                  <span class="elmt4">4</span> Different APIs
+                </h2>
+                <p class="hero-para">
+                  I use four different APIs each has its own functionality.
+                  Every API contain well worthy information with bundle of
+                  useful data & links On clicking any API , it will lead you to
+                  that API example.
+                </p>
+              </div>
+              <div class="sub-col2">
+                <img
+                  src="./images/person2.png"
+                  class="hero-img"
+                  alt="hero image"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="main-sec2">
+          <div class="sec2-div1">
+            <h2 class="div1-heading container1">Frontend Web APIs</h2>
+            <p class="div1-para container1">
+              When writing code for the Web, there are a large number of Web
+              APIs available. API stands for "Application Program Interface". It
+              is a prebuilt program with complex function & lot of data but you
+              can use all information in a simple way. That's the big advantage
+              of APIs.
+            </p>
+          </div>
+          <div class="sec2-div2 container1">
+            <div class="card free-api">
+              <h3 class="card-heading">Free API</h3>
+              <p class="card-para">
+                <img src="./images/api5.png" alt="api-img" class="api-img" />
+                <!-- In free API you just need to sign up or
                             subscribe to their API provider web. Many big companies provide 
                             API to their developer/user i.e facebook , instagram , twitter , 
                             google & youtube etc. These are free APIs which I used in this web.  -->
-                        </p>
-                        <ul class="card-list">
-                            <li class="api-items">
-                                <div class="list-col1"><img src="./images/pexels.png" alt="image" class="card-icons first-icon">
-                                </div>
-                                <div class="list-col2">
-                                    <div class="long-text">
-                                        <strong>Pexels API </strong>
-                                        This free API gives you beautiful & attractive photos,videos.
-                                        <a href="https://www.pexels.com/api/documentation/"> API Documentation</a>
-                                    </div>
-                                    <div class="short-text">
-                                        <strong>Pexels API </strong>
-                                        This free API gives you beautiful photo.
-                                        <a href="https://www.pexels.com/api/documentation/"> API Docs</a>
-                                    </div>
-                                </div>
-                            </li>
-                            <li class="api-items">
-                                <div class="list-col1"><img src="./images/spoonacular.svg" alt="image" class="card-icons">
-                                </div>
-                                <div class="list-col2">
-                                    <div class="long-text">
-                                        <strong>Spoonacular API</strong>
-                                        In this API you can find any recipe information with whole docs.
-                                        <a href="https://spoonacular.com/food-api/docs"> API Documentation</a>
-                                    </div>
-                                    <div class="short-text">
-                                        <strong>Spoonacular API</strong>
-                                        Recipe all info & instruction.
-                                        <a href="https://spoonacular.com/food-api/docs"> API Docs</a>
-                                    </div>
-                                </div>
-                            </li>
-                            <li class="api-items">
-                                <div class="list-col1"><img src="./images/github.png" alt="image" class="card-icons">
-                                </div>
-                                <div class="list-col2">
-                                    <div class="long-text">
-                                        <strong>Github API</strong>
-                                        In this API you can find any developer info who is connected with Github.
-                                        <a href="https://docs.github.com/en/rest"> API Documentation</a>
-                                    </div>
-                                    <div class="short-text">
-                                        <strong>Github API</strong>
-                                        Github developer data & info.
-                                        <a href="https://docs.github.com/en/rest"> API Docs</a>
-                                    </div>
-                                </div>
-                            </li>
-                            <li class="api-items">
-                                <div class="list-col1"><img src="./images/library.jpg" alt="image" class="card-icons">
-                                </div>
-                                <div class="list-col2">
-                                    <div class="long-text">
-                                        <strong>Open Library</strong>
-                                        With this free API you can find authors/book whole info just by entering the name.
-                                        <a href="https://openlibrary.org/developers/api"> API Documentation</a>
-                                    </div>
-                                    <div class="short-text">
-                                        <strong>Open Library</strong>
-                                         Authors full info with books
-                                        <a href="https://openlibrary.org/developers/api"> API Docs</a>
-                                    </div>
-                                </div>
-                            </li>
-                        </ul>
+              </p>
+              <ul class="card-list">
+                <li class="api-items">
+                  <div class="list-col1">
+                    <img
+                      src="./images/pexels.png"
+                      alt="image"
+                      class="card-icons first-icon"
+                    />
+                  </div>
+                  <div class="list-col2">
+                    <div class="long-text">
+                      <strong>Pexels API </strong>
+                      This free API gives you beautiful & attractive
+                      photos,videos.
+                      <a href="https://www.pexels.com/api/documentation/">
+                        API Documentation</a
+                      >
                     </div>
-                    <div class="card premium-api">
-                        <h3 class="card-heading">
-                           Paid API
-                        </h3>
-                        <p class="card-para">
-                            <img src="./images/api4.png" alt="api-img" class="api-img">
-                        </p>
-                        <ul class="card-list">
-                            <li class="api-items">
-                                <div class="list-col1"><img src="./images/googleplay.png" alt="image" class="card-icons first-icon">
-                                </div>
-                                <div class="list-col2">
-                                    <div class="long-text">
-                                        <strong>Google play store </strong>
-                                        You can See up to date reviews, ratings and rankings for products on the Google Play Store!
-                                        <a href="https://rapidapi.com/maxcanna/api/google-play-store/">
-                                            API Documentation</a>
-                                    </div>
-                                    <div class="short-text">
-                                        <strong>Google play store </strong>
-                                        You can See reviews, ratings and rankings etc.
-                                        <a href="https://rapidapi.com/maxcanna/api/google-play-store/">
-                                            API Docs
-                                        </a>
-                                    </div>
-                                </div>
-                            </li>
-                            <li class="api-items">
-                                <div class="list-col1"><img src="./images/ads.png" alt="image" class="card-icons">
-                                </div>
-                                <div class="list-col2">
-                                    <div class="long-text">
-                                        <strong>ADSBexchange</strong>
-                                        Live air traffic and aircraft positional data via ADS-B / MLAT / UAT.
-                                        <a href="https://rapidapi.com/adsbx/api/adsbexchange-com1/"> API Documentation</a>
-                                    </div>
-                                    <div class="short-text">
-                                        <strong>ADSBexchange</strong>
-                                        Live air traffic and aircraft positional data.
-                                         <a href="https://rapidapi.com/adsbx/api/adsbexchange-com1/"> API Docs</a>
-                                    </div>
-                                    
-                                </div>
-                            </li>
-                            <li class="api-items">
-                                <div class="list-col1"><img src="./images/word.jpg" alt="image" class="card-icons">
-                                </div>
-                                <div class="list-col2">
-                                    <div class="long-text">
-                                        <strong>Words API</strong>
-                                        In this dictionary API you can get English words, including definitions, synonyms, 
-                                        and antonyms etc.
-                                        <a href="https://rapidapi.com/dpventures/api/wordsapi/"> API Documentation</a>
-                                    </div>
-                                    <div class="short-text">
-                                        <strong>Words API</strong>
-                                        Dictionary of English words / synonyms / antonyms etc.
-                                        <a href="https://rapidapi.com/dpventures/api/wordsapi/"> API Docs</a>
-                                    </div>
-                                    
-                                </div>
-                            </li>
-                            <li class="api-items">
-                                <div class="list-col1"><img src="./images/meme.png" alt="image" class="card-icons">
-                                </div>
-                                <div class="list-col2">
-                                    <div class="long-text">
-                                        <strong>Meme Generator</strong>
-                                        A simple meme generator that generates memes by choosing a preloaded image.
-                                        <a href="https://rapidapi.com/meme-generator-api-meme-generator-api-default/api/meme-generator/">
-                                            API Documentation
-                                        </a>
-                                    </div>
-                                    <div class="short-text">
-                                        <strong>Meme Generator</strong>
-                                        A simple meme generator  API.
-                                        <a href="https://rapidapi.com/meme-generator-api-meme-generator-api-default/api/meme-generator/">
-                                            API Docs.
-                                        </a>
-                                    </div>
-                                </div>
-                            </li>
-                        </ul>
+                    <div class="short-text">
+                      <strong>Pexels API </strong>
+                      This free API gives you beautiful photo.
+                      <a href="https://www.pexels.com/api/documentation/">
+                        API Docs</a
+                      >
                     </div>
-                </div>
-            </div>
-            <div class="main-sec3">
-                <div class="sec3-div1">
-                    <h2 class="div1-heading container1">
-                        My Frontend Projects
-                    </h2>
-                    <p class="div1-para sec2-para container1">
-                        My name is 'Muhammad Owais' , a FrontEnd developer. As a FrontEnd Developer 
-                        and gaining a lot of experience from different experience people 🤵 and 
-                        company 🏦 , now I have a strong knowledge and experience in developing a 
-                        web with different styles , designing , coding 🖋 strategies, techniques and skills.
-                        Here are some of my projects.
-                    </p>
-                </div>
-                <div class="sec3-div2 container1">
-                        <div data-scroll class="sec3-card">
-                                <h2 class="sec3-card-heading">Blogr-Landing-Page</h2>
-                            <hr>
-                            <div class="card-body">
-                                <a class="sec3-img-link" href="https://programmerowais.github.io/blogr-page.github.io/">
-                                    <img src="./images/blogr.jpg" alt="images" class="sec3-img">
-                                </a>
-                                <hr>
-                                <p class="card-text">
-                                    This is a front-end mentor challenge. The job is to make the copy of "Blogr-Landing-Page" .
-                                     In simple words Convert this professional Figma file into HTML.
-                                    This project is for two screen sizes one is mobile ( 375px) and the other
-                                    is desktop (1440px).
-                                </p>
-                                    <div class="btn-group">
-                                        <a href="https://programmerowais.github.io/blogr-page.github.io/">
-                                            <button type="button" class="card-btn">View site</button></a>
-                                        <a href="https://github.com/ProgrammerOwais/blogr-page.github.io">
-                                            <button type="button" class="card-btn">View Code</button></a>
-                                    </div>
-                            </div>
-                        </div>
-                        <div data-scroll class="sec3-card">
-                                <h2 class="sec3-card-heading">Pricing-Component</h4>
-                            <hr>
-                            <div class="card-body">
-                                <a class="sec3-img-link" href="https://programmerowais.github.io/ProgrammerOwais-interactive-pricing-component-by--Owais.github.io/">
-                                    <img src="./images/pricing.jpg" alt="images" class="sec3-img">
-                                </a>
-                                <hr>
-                                <p class="card-text">
-                                    This is a front-end mentor challenge. The job is to make 
-                                    the copy of " Interactive-Pricing-component ".
-                                     In simple words Convert Figma file to HTML.
-                                     This project is responsive for all devices.The project layout 
-                                     is simple and beautiful.
-                                </p>
-                                    <div class="btn-group">
-                                        <a href="https://programmerowais.github.io/ProgrammerOwais-interactive-pricing-component-by--Owais.github.io/">
-                                            <button type="button" class="card-btn">View site</button></a>
-                                        <a href="https://github.com/ProgrammerOwais/ProgrammerOwais-interactive-pricing-component-by--Owais.github.io/tree/master">
-                                            <button type="button" class="card-btn">View Code</button></a>
-                                    </div>
-                            </div>
-                        </div>
-                        <div data-scroll class="sec3-card">
-                                <h2 class="sec3-card-heading">Sunny-Agency-Page</h2>
-                            <hr>
-                            <div class="card-body">
-                                <a class="sec3-img-link" href="https://programmerowais.github.io/sunnyside-agency-page.github.io/">
-                                    <img src="./images/sunny.jpg" alt="images" class="sec3-img">
-                                </a>
-                                <hr>
-                                <p class="card-text">
-                                    This is a front-end mentor challenge. The job is to make 
-                                    the copy of " SunnySide Agency Page ".
-                                     In simple words Convert Figma file to HTML.
-                                    This project is for two screen sizes one is mobile ( 375px) and the other
-                                    is desktop (1440px).
-                                </p>
-                                    <div class="btn-group">
-                                        <a href="https://programmerowais.github.io/sunnyside-agency-page.github.io/">
-                                            <button type="button" class="card-btn">View site</button></a>
-                                        <a href="https://github.com/ProgrammerOwais/sunnyside-agency-page.github.io">
-                                            <button type="button" class="card-btn">View Code</button></a>
-                                    </div>
-                            </div>
-                        </div>
-                </div>
-
-            </div>
-            <div class="main-sec4">
-                <img src="./images/cartoonimg2.jpg" alt="img" class="cartoon">
-                <img src="./images/cartoonimg3.jpg" alt="img" class="cartoon">
-            </div>
-            <div class="main-sec5">
-                <div class="sec5-div container1">
-                    <div class="sec5-text">
-                        <h2 class="sec5-heading">
-                            Message Me
-                        </h2>
-                        <p class="sec5-para">
-                            Programming & web development was always a challenging
-                            for a people. Day by Day new things are developed from web & programming.
-                            As in my experience I am ready to tackle any challenge & I will do it my best.
-                            Now if you are facing some type of coding problem,
-                            Wanna make a some bugs fixation , wanna 
-                            make a website from scratch , wanna redesign
-                            your web , update something in your web or need
-                            any help related to web development or programming 
-                            you can simply message me in here.
-                            <strong>I am available to work on your awesome project</strong>
-                        </p>
+                  </div>
+                </li>
+                <li class="api-items">
+                  <div class="list-col1">
+                    <img
+                      src="./images/spoonacular.svg"
+                      alt="image"
+                      class="card-icons"
+                    />
+                  </div>
+                  <div class="list-col2">
+                    <div class="long-text">
+                      <strong>Spoonacular API</strong>
+                      In this API you can find any recipe information with whole
+                      docs.
+                      <a href="https://spoonacular.com/food-api/docs">
+                        API Documentation</a
+                      >
                     </div>
-                    <div class="sec5-email">
-                        <form action="https://formsubmit.co/owaisxeon@gmail.com" method="POST" class="form">
-                            <label for="first">First Name</label>
-                            <input type="text" class="input-field" name="First-name" id="first" required>
-                            <label for="last">Last Name</label>
-                            <input type="text" class="input-field" name="Last-name" id="last" required>
-                            <label for="email">Email</label>
-                            <input type="email" class="input-field" name="email" id="email" required>
-                            <label for="message">Message</label>
-                            <textarea name="message" id="message" name ="message" cols="40" rows="10" required>
-    
-                            </textarea>
-                            <input type="submit" class="submit-btn" value="Sumbit">
-                        </form>
+                    <div class="short-text">
+                      <strong>Spoonacular API</strong>
+                      Recipe all info & instruction.
+                      <a href="https://spoonacular.com/food-api/docs">
+                        API Docs</a
+                      >
                     </div>
-                </div>
-                <p class="bottom-para">Createed by Muhammad Owais</p>
+                  </div>
+                </li>
+                <li class="api-items">
+                  <div class="list-col1">
+                    <img
+                      src="./images/github.png"
+                      alt="image"
+                      class="card-icons"
+                    />
+                  </div>
+                  <div class="list-col2">
+                    <div class="long-text">
+                      <strong>Github API</strong>
+                      In this API you can find any developer info who is
+                      connected with Github.
+                      <a href="https://docs.github.com/en/rest">
+                        API Documentation</a
+                      >
+                    </div>
+                    <div class="short-text">
+                      <strong>Github API</strong>
+                      Github developer data & info.
+                      <a href="https://docs.github.com/en/rest"> API Docs</a>
+                    </div>
+                  </div>
+                </li>
+                <li class="api-items">
+                  <div class="list-col1">
+                    <img
+                      src="./images/library.jpg"
+                      alt="image"
+                      class="card-icons"
+                    />
+                  </div>
+                  <div class="list-col2">
+                    <div class="long-text">
+                      <strong>Open Library</strong>
+                      With this free API you can find authors/book whole info
+                      just by entering the name.
+                      <a href="https://openlibrary.org/developers/api">
+                        API Documentation</a
+                      >
+                    </div>
+                    <div class="short-text">
+                      <strong>Open Library</strong>
+                      Authors full info with books
+                      <a href="https://openlibrary.org/developers/api">
+                        API Docs</a
+                      >
+                    </div>
+                  </div>
+                </li>
+              </ul>
             </div>
-        </article>
+            <div class="card premium-api">
+              <h3 class="card-heading">Paid API</h3>
+              <p class="card-para">
+                <img src="./images/api4.png" alt="api-img" class="api-img" />
+              </p>
+              <ul class="card-list">
+                <li class="api-items">
+                  <div class="list-col1">
+                    <img
+                      src="./images/googleplay.png"
+                      alt="image"
+                      class="card-icons first-icon"
+                    />
+                  </div>
+                  <div class="list-col2">
+                    <div class="long-text">
+                      <strong>Google play store </strong>
+                      You can See up to date reviews, ratings and rankings for
+                      products on the Google Play Store!
+                      <a
+                        href="https://rapidapi.com/maxcanna/api/google-play-store/"
+                      >
+                        API Documentation</a
+                      >
+                    </div>
+                    <div class="short-text">
+                      <strong>Google play store </strong>
+                      You can See reviews, ratings and rankings etc.
+                      <a
+                        href="https://rapidapi.com/maxcanna/api/google-play-store/"
+                      >
+                        API Docs
+                      </a>
+                    </div>
+                  </div>
+                </li>
+                <li class="api-items">
+                  <div class="list-col1">
+                    <img
+                      src="./images/ads.png"
+                      alt="image"
+                      class="card-icons"
+                    />
+                  </div>
+                  <div class="list-col2">
+                    <div class="long-text">
+                      <strong>ADSBexchange</strong>
+                      Live air traffic and aircraft positional data via ADS-B /
+                      MLAT / UAT.
+                      <a
+                        href="https://rapidapi.com/adsbx/api/adsbexchange-com1/"
+                      >
+                        API Documentation</a
+                      >
+                    </div>
+                    <div class="short-text">
+                      <strong>ADSBexchange</strong>
+                      Live air traffic and aircraft positional data.
+                      <a
+                        href="https://rapidapi.com/adsbx/api/adsbexchange-com1/"
+                      >
+                        API Docs</a
+                      >
+                    </div>
+                  </div>
+                </li>
+                <li class="api-items">
+                  <div class="list-col1">
+                    <img
+                      src="./images/word.jpg"
+                      alt="image"
+                      class="card-icons"
+                    />
+                  </div>
+                  <div class="list-col2">
+                    <div class="long-text">
+                      <strong>Words API</strong>
+                      In this dictionary API you can get English words,
+                      including definitions, synonyms, and antonyms etc.
+                      <a href="https://rapidapi.com/dpventures/api/wordsapi/">
+                        API Documentation</a
+                      >
+                    </div>
+                    <div class="short-text">
+                      <strong>Words API</strong>
+                      Dictionary of English words / synonyms / antonyms etc.
+                      <a href="https://rapidapi.com/dpventures/api/wordsapi/">
+                        API Docs</a
+                      >
+                    </div>
+                  </div>
+                </li>
+                <li class="api-items">
+                  <div class="list-col1">
+                    <img
+                      src="./images/meme.png"
+                      alt="image"
+                      class="card-icons"
+                    />
+                  </div>
+                  <div class="list-col2">
+                    <div class="long-text">
+                      <strong>Meme Generator</strong>
+                      A simple meme generator that generates memes by choosing a
+                      preloaded image.
+                      <a
+                        href="https://rapidapi.com/meme-generator-api-meme-generator-api-default/api/meme-generator/"
+                      >
+                        API Documentation
+                      </a>
+                    </div>
+                    <div class="short-text">
+                      <strong>Meme Generator</strong>
+                      A simple meme generator API.
+                      <a
+                        href="https://rapidapi.com/meme-generator-api-meme-generator-api-default/api/meme-generator/"
+                      >
+                        API Docs.
+                      </a>
+                    </div>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="main-sec3">
+          <div class="sec3-div1">
+            <h2 class="div1-heading container1">My Frontend Projects</h2>
+            <p class="div1-para sec2-para container1">
+              My name is 'Muhammad Owais' , a FrontEnd developer. As a FrontEnd
+              Developer and gaining a lot of experience from different
+              experience people 🤵 and company 🏦 , now I have a strong
+              knowledge and experience in developing a web with different styles
+              , designing , coding 🖋 strategies, techniques and skills. Here are
+              some of my projects.
+            </p>
+          </div>
+          <div class="sec3-div2 container1">
+            <div data-scroll class="sec3-card">
+              <h2 class="sec3-card-heading">Blogr-Landing-Page</h2>
+              <hr />
+              <div class="card-body">
+                <a
+                  class="sec3-img-link"
+                  href="https://programmerowais.github.io/blogr-page.github.io/"
+                >
+                  <img src="./images/blogr.jpg" alt="images" class="sec3-img" />
+                </a>
+                <hr />
+                <p class="card-text">
+                  This is a front-end mentor challenge. The job is to make the
+                  copy of "Blogr-Landing-Page" . In simple words Convert this
+                  professional Figma file into HTML. This project is for two
+                  screen sizes one is mobile ( 375px) and the other is desktop
+                  (1440px).
+                </p>
+                <div class="btn-group">
+                  <a
+                    href="https://programmerowais.github.io/blogr-page.github.io/"
+                    class="card-btn"
+                  >
+                    View site</a
+                  >
+                  <a
+                    href="https://github.com/ProgrammerOwais/blogr-page.github.io"
+                    class="card-btn"
+                  >
+                    View Code</a
+                  >
+                </div>
+              </div>
+            </div>
+            <div data-scroll class="sec3-card">
+              <h2 class="sec3-card-heading">Pricing-Component</h2>
+              <hr />
+              <div class="card-body">
+                <a
+                  class="sec3-img-link"
+                  href="https://programmerowais.github.io/ProgrammerOwais-interactive-pricing-component-by--Owais.github.io/"
+                >
+                  <img
+                    src="./images/pricing.jpg"
+                    alt="images"
+                    class="sec3-img"
+                  />
+                </a>
+                <hr />
+                <p class="card-text">
+                  This is a front-end mentor challenge. The job is to make the
+                  copy of " Interactive-Pricing-component ". In simple words
+                  Convert Figma file to HTML. This project is responsive for all
+                  devices.The project layout is simple and beautiful.
+                </p>
+                <div class="btn-group">
+                  <a
+                    href="https://programmerowais.github.io/ProgrammerOwais-interactive-pricing-component-by--Owais.github.io/"
+                    class="card-btn"
+                  >
+                    View site</a
+                  >
+                  <a
+                    href="https://github.com/ProgrammerOwais/ProgrammerOwais-interactive-pricing-component-by--Owais.github.io/tree/master"
+                    class="card-btn"
+                  >
+                    View Code</a
+                  >
+                </div>
+              </div>
+            </div>
+            <div data-scroll class="sec3-card">
+              <h2 class="sec3-card-heading">Sunny-Agency-Page</h2>
+              <hr />
+              <div class="card-body">
+                <a
+                  class="sec3-img-link"
+                  href="https://programmerowais.github.io/sunnyside-agency-page.github.io/"
+                >
+                  <img src="./images/sunny.jpg" alt="images" class="sec3-img" />
+                </a>
+                <hr />
+                <p class="card-text">
+                  This is a front-end mentor challenge. The job is to make the
+                  copy of " SunnySide Agency Page ". In simple words Convert
+                  Figma file to HTML. This project is for two screen sizes one
+                  is mobile ( 375px) and the other is desktop (1440px).
+                </p>
+                <div class="btn-group">
+                  <a
+                    href="https://programmerowais.github.io/sunnyside-agency-page.github.io/"
+                    class="card-btn"
+                  >
+                    View site</a
+                  >
+                  <a
+                    href="https://github.com/ProgrammerOwais/sunnyside-agency-page.github.io"
+                    class="card-btn"
+                  >
+                    View Code</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="main-sec4">
+          <img src="./images/cartoonimg2.jpg" alt="img" class="cartoon" />
+          <img src="./images/cartoonimg3.jpg" alt="img" class="cartoon" />
+        </div>
+        <div class="main-sec5">
+          <div class="sec5-div container1">
+            <div class="sec5-text">
+              <h2 class="sec5-heading">Message Me</h2>
+              <p class="sec5-para">
+                Programming & web development was always a challenging for a
+                people. Day by Day new things are developed from web &
+                programming. As in my experience I am ready to tackle any
+                challenge & I will do it my best. Now if you are facing some
+                type of coding problem, Wanna make a some bugs fixation , wanna
+                make a website from scratch , wanna redesign your web , update
+                something in your web or need any help related to web
+                development or programming you can simply message me in here.
+                <strong>I am available to work on your awesome project</strong>
+              </p>
+            </div>
+            <div class="sec5-email">
+              <form
+                action="https://formsubmit.co/owaisxeon@gmail.com"
+                method="POST"
+                class="form"
+              >
+                <label for="first">First Name</label>
+                <input
+                  type="text"
+                  class="input-field"
+                  name="First-name"
+                  id="first"
+                  required
+                />
+                <label for="last">Last Name</label>
+                <input
+                  type="text"
+                  class="input-field"
+                  name="Last-name"
+                  id="last"
+                  required
+                />
+                <label for="email">Email</label>
+                <input
+                  type="email"
+                  class="input-field"
+                  name="email"
+                  id="email"
+                  required
+                />
+                <label for="message">Message</label>
+                <textarea
+                  name="message"
+                  id="message"
+                  cols="40"
+                  rows="10"
+                  required
+                >
+                </textarea>
+                <input type="submit" class="submit-btn" value="Sumbit" />
+              </form>
+            </div>
+          </div>
+          <p class="bottom-para">Createed by Muhammad Owais</p>
+        </div>
+      </article>
     </main>
-    
-  <script src="javascript.js"></script>  
-</body>
+
+    <script src="javascript.js"></script>
+  </body>
 </html>
