@@ -519,6 +519,9 @@ textarea {
 }
 
 /*********************************** Setting github repos *********************/
+button[type="button"] {
+  cursor: pointer;
+}
 .github-row2 {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
@@ -967,6 +970,7 @@ textarea {
   color: black;
   opacity: 0.5;
   transition: all 300ms;
+  cursor: pointer;
 }
 
 .search:hover,
